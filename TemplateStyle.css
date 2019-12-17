@@ -1,14 +1,17 @@
 html{
     margin:0;
     padding:0;
+    height:100%;
 }
 body{
     margin:0;
     padding:0;
-    background-image:url('Texture/concrete-texture/concrete-texture.png');
+    background-image:linear-gradient(to bottom,rgba(255,246,235,0.75)0%,rgba(106,93,66,0.5)100%),url('Texture/dust_scratches/dust_scratches.png');
+    background-blend-mode:color-burn,normal;
     background-repeat:repeat;
-    background-size:150px 150px;
-
+    display:flex;
+    flex-direction:row;
+    height:100%;
 }
 .pin{
     /* general pin style */
@@ -27,32 +30,35 @@ body{
 @media only screen and (max-width:1600px) and (min-height:500px){
  /* Screen width max 13-inch */
  /* Add in min width later */
-    #topBar{ 
-        /* header Welcome section */
-        padding:0;
-        margin:0;
-        background-image:linear-gradient(180deg,rgba(156,131,74,0.5)0%,rgb(255, 241, 211,0.5)100%),url('Texture/tileable_wood_texture/tileable_wood_texture_rotated.png');
-        background-size:170px 170px;
-        background-repeat:repeat;
-        background-blend-mode:color-burn,normal;
-        background-clip:padding-box;
-        box-shadow:0px 10px 10px rgba(0, 0, 0, 0.25);
-
-        width:100%;
-        height:12%;
-        min-height:60px;
-        text-align:center;
-        z-index:10;
-    }
     #generalContent {
         display:flex;
-        flex-direction:row;
-        position:absolute;
+        flex-direction:column;
+        position:relative;
         top:0;
         width:100%;
         height:100%;
         /* border:1px solid red; */
     }
+    #topBar{ 
+        /* header Welcome section */
+        
+        padding:0;
+        margin:0;
+        /* background-image:linear-gradient(180deg,rgba(156,131,74,0.5)0%,rgb(255, 241, 211,0.5)100%),url('Texture/tileable_wood_texture/tileable_wood_texture_rotated.png');
+        background-size:170px 170px;
+        background-repeat:repeat;
+        background-blend-mode:color-burn,normal;
+        background-clip:padding-box;
+        box-shadow:0px 10px 10px rgba(0, 0, 0, 0.25);
+        border-bottom: 20px solid transparent;
+        border-image: url('Texture/tileable_wood_texture/tileable_wood_texture_rotated.png') 30% repeat; */
+
+        width:100%;
+        height:12%;
+        min-height:60px;
+        text-align:center;
+    }
+
     #leftBar{
         padding:0;
         margin:0;
@@ -68,6 +74,7 @@ body{
         background-blend-mode:color-burn, normal;
         background-repeat:repeat;
         box-shadow:5px 0px 10px rgba(0, 0, 0, 0.5);
+        z-index:10;
     }
     ul{
         list-style:none;
