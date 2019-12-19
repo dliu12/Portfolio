@@ -1,9 +1,12 @@
-html{
+html{ 
+    /* Done */
     margin:0;
     padding:0;
     height:100%;
+    position:fixed;
 }
 body{
+    /* Done */
     margin:0;
     padding:0;
     background-image:linear-gradient(to bottom,rgba(255,246,235,0.75)0%,rgba(106,93,66,0.5)100%),url('Texture/dust_scratches/dust_scratches.png');
@@ -14,6 +17,7 @@ body{
     height:100%;
 }
 .pin{
+    /* Done */
     /* general pin style */
     padding:0;
     position:relative;
@@ -27,10 +31,12 @@ body{
     width:20px;
     box-shadow:0px 6px 4px rgba(0, 0, 0, 0.5); 
 }
+
 @media only screen and (max-width:1600px) and (min-height:500px){
  /* Screen width max 13-inch */
  /* Add in min width later */
     #generalContent {
+        /* Done */
         display:flex;
         flex-direction:column;
         position:relative;
@@ -40,19 +46,11 @@ body{
         /* border:1px solid red; */
     }
     #topBar{ 
-        /* header Welcome section */
-        
+        /* header Welcome section */ 
+        /* Done */
         padding:0;
         margin:0;
-        /* background-image:linear-gradient(180deg,rgba(156,131,74,0.5)0%,rgb(255, 241, 211,0.5)100%),url('Texture/tileable_wood_texture/tileable_wood_texture_rotated.png');
-        background-size:170px 170px;
-        background-repeat:repeat;
-        background-blend-mode:color-burn,normal;
-        background-clip:padding-box;
-        box-shadow:0px 10px 10px rgba(0, 0, 0, 0.25);
-        border-bottom: 20px solid transparent;
-        border-image: url('Texture/tileable_wood_texture/tileable_wood_texture_rotated.png') 30% repeat; */
-
+    
         width:100%;
         height:12%;
         min-height:60px;
@@ -60,6 +58,7 @@ body{
     }
 
     #leftBar{
+        /* Done */
         padding:0;
         margin:0;
         border-right: 20px solid transparent;
@@ -77,24 +76,31 @@ body{
         z-index:10;
     }
     ul{
+        /* Done */
         list-style:none;
     }
     #leftBar section{
+        /* Done */
         /* LeftBar contents */
         position:relative;
         display:flex;
         flex-direction:column;
     }
-    #logo{
-        background-color:brown;
-        width:100px;
-        height:100px;
-        position:relative;
-        margin-left:auto;
+    .logo{
+        /* Done */
+        /* border:1px solid black; */
+        width:100%;
+        height:125px;
+        -webkit-filter:opacity(50%) drop-shadow(2px -2px 1px rgba(43,23,0,1));
+        filter:opacity(50%) drop-shadow(2px -2px 1px rgba(43,23,0,1));
+
     }
     .leftNav{
+        /* Done */
+        position:relative;
         padding:0;
         margin:0; 
+        /* margin-top:150px; */
         margin-top:50px;
         background-image:linear-gradient(170deg,rgba(255, 255, 255,0.75)0%,rgba(116,67,10,0.75)100%),url('Texture/hip-square/hip-square.png');
         background-blend-mode:overlay,normal;
@@ -105,7 +111,8 @@ body{
 
     /* content Style */
     #mainContent{
-        position:realtive;
+        /* Done */
+        position:relative;
         width:100%;
         height:100%;
         display:flex;
