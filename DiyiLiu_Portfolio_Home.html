@@ -7,147 +7,72 @@
         <meta name="description" content="Diyi's portfolio">
         <meta name="viewport" cotent="width=device-width, initial-scale=1.0">
         <title>Diyi's Portfolio</title>
-        <link rel="stylesheet" type="text/css" href="TemplateStyle.css">
-        <!-- <link rel="icon" href="Images\personal_logo2fill_Bbl_icon.ico"> -->  
-        <style>
-            @media only screen and (max-width:1600px) and (min-height:500px){
-            .leftNav{
-                position:relative;
-                margin-left:auto;
-                margin-right:10px;
-                height:250px;
-                width:80%;
-                min-width:100px;
-                display:flex;
-                flex-direction:column;
-                transform:rotate(-1deg);
-            }
-            .contactInfo {
-                /* border:1px solid black; */
-                margin-top:10px;
-            }
-            
-            /* Page specific CSS*/
-            #mainContent section:first-child {
-                position:relative;
-                height:80%;
-                /* background-color:gray; */
-            }
-            #mainContent section:last-child{
-                position:relative;
-                height:20%;
-                text-align:center;
-                /* background-color:lightblue; */
-            }
-            #projectContent {
-                margin:0;
-                padding:0;
-                position:absolute;
-                bottom:0;
-                display:flex;
-                flex-direction:row;
-                /* background-color:gray; */
-                width:100%;
-                height:450px;
-            }
-            #projectContent li{
-                /* border:1px solid black; */
-                /* background-color:lightcoral; */
-                width:100%;
-                margin:3%;
-            }
-        }
-        /* Currently working on: Templates */
-        .projectTemplate{
-            position:relative;
-            border:20px solid rgba(221, 221, 221,1);
-            background-color:rgba(167, 167, 167,1);
-            display:flex;
-            flex-direction:column;
-            box-shadow:0 5px 2px 1px rgba(0, 0, 0, 0.25);
-        }
-        .TapeTemplate{
-            /* border:1px solid gray; */
-            background-image:linear-gradient(to bottom, rgba(255, 255, 255, 0.5),rgba(186,186,186,0.75)),url('Texture/noise_lines/noise_lines.png');
-            background-blend-mode:normal,luminosity;
-            background-repeat:repeat;
-            opacity:0.85;
-
-            width:50px;
-            height:100px;
-            margin-left:auto;
-            margin-right:auto;
-            box-shadow:0px 2px 2px 1px rgba(0, 0, 0, 0.1);
-            z-index:10;
-        }
-        .projectImage{
-            width:100%;
-            height:100%;
-        }
-        .projectTemplateDescription{
-            width:100%;
-            height:50px;
-            background-color:rgba(221,221,221,1);
-            text-align:center;
-        }
-        #tape1{
-            transform:rotate(5deg);
-            margin-top:-55px;
-            height:100px;
-        }
-        #tape2{
-            transform:rotate(-5deg);
-            margin-top:-65px;
-            height:125px;
-        }
-        #tape3{
-            transform:rotate(7deg);
-            margin-top:-50px;
-            height:115px;
-        }
-        </style>  
+        <link rel="stylesheet" type="text/css" href="TemplateCSS.css">
+        <link rel="stylesheet" type="text/css" href="HomePageSpecific13.css">
+        <link rel="icon" href="Logo/Personal_Logo1_icon.ico">  
         <script>
             console.log("Current screen width " + screen.width +" px");
         </script>
 
     </head>
     <body>
-        <header id="topBar">
-            <h1>Welcome To My Page</h1>
-        </header>
+        <div id="leftBar">
+            <section>
+                <a href="DiyiLiu_Portfolio_Home.html"><img class="logo" src="Logo/StainLogo.svg" /></a>
+                <ul class="leftNav">
+                        <li class="pin">
+                        </li>
+                        <li class="contactInfo">
+                            Bachloer of Science of Engineer,The Cooper Union
+                        </li>
+                        <li class="contactInfo">
+                            diyi.liu997@gmail.com
+                        </li>
+                        <li class="contactInfo">
+                            (917)325-1521
+                        </li>
+                        <!-- <li class="logoStamp"><img src="Logo/Personal_Logo1.svg"/></li> -->
+                    </ul>
+            </section>
+        </div>
         <div id ="generalContent">
-            <div id="leftBar">
-                <section>
-                    <picture id="logo">
-                    </picture>
-                    <ul class="leftNav">
-                            <li class="pin">
-                            </li>
-                            <li class="contactInfo">
-                                The Cooper Union
-                            </li>
-                            <li class="contactInfo">
-                                diyi.liu997@gmail.com
-                            </li>
-                            <li class="contactInfo">
-                                (917)325-1521
-                            </li>
-                        </ul>
-                </section>
-            </div>
+            <header id="topBar">  
+                <h1>
+                    <div class="pin" id="pin1"></div>
+                    Welcome To Diyi's Page
+                    <div class="pin" id="pin2"></div>
+                </h1>      
+            </header>
             <div id="mainContent">
                 <section>
                     <ul id="projectContent">
-                        <li class="projectTemplate" id="current"><div class="TapeTemplate" id="tape1"></div><div class="projectImage">image place holder. DOn't judge color. Just place holder.</div><div class="projectTemplateDescription">Description</div></li>
-                        <li class="projectTemplate" id="web"><div class="TapeTemplate" id="tape2"></div><div class="projectImage">image</div><div class="projectTemplateDescription">Description</div></li>
-                        <li class="projectTemplate" id="other"><div class="TapeTemplate" id="tape3"></div><div class="projectImage">image</div><div class="projectTemplateDescription">Description</div></li>
+                        <li class="projectTemplate" id="current"><div class="TapeTemplate" id="tape1"></div>
+                            <a href="DiyiLiu_Portfolio_Current.html">
+                                <!-- <img class="projectImage" src="Images/Current.svg"/> -->
+                                <div class="projectImage"></div>
+                                <div class="projectTemplateDescription">Currently Working on...</div>
+                            </a>
+                        </li>
+                        <li class="projectTemplate" id="web"><div class="TapeTemplate" id="tape2"></div>
+                            <a href="DiyiLiu_Portfolio_Web.html">
+                                <div class="projectImage"></div>
+                                <div class="projectTemplateDescription">Web Development Projects</div>
+                            </a>
+                        </li>
+                        <li class="projectTemplate" id="other"><div class="TapeTemplate" id="tape3"></div>
+                            <a href="DiyiLiu_Portfolio_Other.html">
+                                <div class="projectImage"></div>
+                                <div class="projectTemplateDescription">Other projects of different types</div>
+                            </a>
+                        </li>
                     </ul>
                 </section>
-                <section>
-                    <h3>Goal</h3>
+                <section id="GoalSection">
+                    <div class="TapeTemplate" id="tape4"></div>
+                    <h3>Goal: Web-Developer!</h3>
+                    <div class="TapeTemplate" id="tape5"></div>
                 </section>
             </div>
-        </div>
-        
+        </div>      
     </body>
 </html>
