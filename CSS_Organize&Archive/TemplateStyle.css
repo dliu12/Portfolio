@@ -1,0 +1,126 @@
+html{ 
+    /* Done */
+    margin:0;
+    padding:0;
+    height:100%;
+    position:fixed;
+}
+body{
+    /* Done */
+    margin:0;
+    padding:0;
+    background-image:linear-gradient(to bottom,rgba(255,246,235,0.75)0%,rgba(106,93,66,0.5)100%),url('Texture/dust_scratches/dust_scratches.png');
+    background-blend-mode:color-burn,normal;
+    background-repeat:repeat;
+    display:flex;
+    flex-direction:row;
+    height:100%;
+}
+.pin{
+    /* Done */
+    /* general pin style */
+    padding:0;
+    position:relative;
+    margin-left:auto;
+    margin-right:auto;
+    margin-top:-5px;
+    background: radial-gradient(circle farthest-side at 50% 25%,rgba(255,103,103,1),rgba(157,0,0,1));
+    border-radius:15px 15px 15px 15px;
+    border:1px solid #A72A2A;
+    height:20px;
+    width:20px;
+    box-shadow:0px 6px 4px rgba(0, 0, 0, 0.5); 
+}
+
+@media only screen and (max-width:1600px) and (min-height:500px){
+ /* Screen width max 13-inch */
+ /* Add in min width later */
+    #generalContent {
+        /* Done */
+        display:flex;
+        flex-direction:column;
+        position:relative;
+        top:0;
+        width:100%;
+        height:100%;
+        /* border:1px solid red; */
+    }
+    #topBar{ 
+        /* header Welcome section */ 
+        /* Done */
+        padding:0;
+        margin:0;
+    
+        width:100%;
+        height:12%;
+        min-height:60px;
+        text-align:center;
+    }
+
+    #leftBar{
+        /* Done */
+        padding:0;
+        margin:0;
+        border-right: 20px solid transparent;
+        border-image: url('Texture/tileable_wood_texture/tileable_wood_texture.png') 30% repeat;
+        height:100%;
+        width:15%;
+        z-index:10;
+        text-align:right;
+
+        background-image:linear-gradient(180deg,rgba(255, 255, 255, 0.25)0%,rgba(150,135,104,0.25)100%),url('Texture/cork-board/cork-board.png');
+        background-clip:padding-box;
+        background-blend-mode:color-burn, normal;
+        background-repeat:repeat;
+        box-shadow:5px 0px 10px rgba(0, 0, 0, 0.5);
+        z-index:10;
+    }
+    ul{
+        /* Done */
+        list-style:none;
+    }
+    #leftBar section{
+        /* Done */
+        /* LeftBar contents */
+        position:relative;
+        display:flex;
+        flex-direction:column;
+    }
+    .logo{
+        /* Done */
+        /* border:1px solid black; */
+        width:100%;
+        height:125px;
+        -webkit-filter:opacity(50%) drop-shadow(2px -2px 1px rgba(43,23,0,1));
+        filter:opacity(50%) drop-shadow(2px -2px 1px rgba(43,23,0,1));
+
+    }
+    .leftNav{
+        /* Done */
+        position:relative;
+        padding:0;
+        margin:0; 
+        /* margin-top:150px; */
+        margin-top:50px;
+        background-image:linear-gradient(170deg,rgba(255, 255, 255,0.75)0%,rgba(116,67,10,0.75)100%),url('Texture/hip-square/hip-square.png');
+        background-blend-mode:overlay,normal;
+        background-repeat:repeat;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);    
+
+    }
+
+    /* content Style */
+    #mainContent{
+        /* Done */
+        position:relative;
+        width:100%;
+        height:100%;
+        display:flex;
+        flex-direction:column;
+        z-index:-1;
+    }
+
+}
+@media only screen and (min-width:1601px) and (min-height:500px){
+    /* blank for now */
+}
