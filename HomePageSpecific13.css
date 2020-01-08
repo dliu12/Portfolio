@@ -35,7 +35,6 @@
 #projectContent {
     /* list of projects */
     margin:0;
-    margin-bottom:15%;
     padding:0;
     position:absolute;
     bottom:0;
@@ -88,7 +87,7 @@
     background-position:center;
 }
 
-@media only screen and (max-width:1600px){
+@media only screen and (max-width:1600px) and (min-height:500px){
 /* Screen width max 13-inch */
 #topBar{ 
     /* header Welcome section */    
@@ -172,17 +171,5 @@
     transform:rotate(-2deg);
 }
 /* Newly Added */
-@media only screen and (max-width:1000px) {
-    #projectContent{
-        margin-bottom:20%;
-    }
-    #projectContent li{
-        height:350px;
-    } 
-}
-@media only screen and (max-height:750px){
-    #projectContent{
-        margin-bottom:10%;
-    }
-}
+
 }
