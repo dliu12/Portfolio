@@ -17,6 +17,17 @@
     left:45%;
     height:115px;
 }
+.leftNav{
+    font-family:'Open Sans', sans-serif;
+    font-size:14px;
+    font-weight:bold;
+    color:rgba(60,54,50,0.88);
+}
+.contactInfo span{
+    font-size:13px;
+    font-style:italic;
+    font-weight:normal;
+}
 #mainContent section:first-child {
     /* project displays */
     position:relative;
@@ -35,10 +46,9 @@
 #projectContent {
     /* list of projects */
     margin:0;
-    margin-bottom:15%;
     padding:0;
-    position:absolute;
-    bottom:0;
+    margin-top:5%;
+    position:relative;
     display:flex;
     flex-direction:row;
     width:100%;
@@ -47,6 +57,7 @@
     /* Individual projects */
     width:100%;
 }
+
 #GoalSection h3{
     background-image:linear-gradient(to bottom,rgba(109, 81, 17, 0.25)0%,rgb(53, 38, 5,0.25)100%),url('Texture/linedpaper/linedpaper.png');
     background-blend-mode:color-burn,normal;
@@ -56,6 +67,18 @@
     width:fit-content;
     height:fit-content;
     text-align:center;
+
+    font-family:'Open Sans',sans-serif;
+    color:rgba(60,54,50,0.88);
+    font-size:14px;
+    font-style: italic;
+    font-weight: lighter;
+}
+#GoalSection h3 span{
+    padding-left:10px;
+    font-family:'Permanent Marker', cursive;
+    color:rgba(155, 17, 17,0.80);
+    font-size:35px;
 }
 #current .projectImage{
     background-image:linear-gradient(180deg,rgba(102,102,102,0.5)0%,rgba(26,9,0,1)100%), url('Images/Current.svg');
@@ -88,12 +111,12 @@
     background-position:center;
 }
 
-@media only screen and (max-width:1600px){
+
 /* Screen width max 13-inch */
 #topBar{ 
     /* header Welcome section */    
     height:12%;
-    min-height:60px;
+    max-height:100px;
 }
 #leftBar{
     /* Left Navigation and information */
@@ -111,6 +134,7 @@
     margin-top:50px;
     margin-left:auto;
     margin-right:10px;
+    padding-right:5px;
     height:250px;
     width:80%;
     min-width:100px;
@@ -118,19 +142,20 @@
 }
 .contactInfo {
     /* Left Nav info */
-    margin-top:10px;
+    margin-top:15px;
+    word-wrap: break-word;
 }
 #mainContent section:first-child {
     /* Project displays */
-    height:80%;
+    height:85%;
 }
 #mainContent section:last-child{
     /* Goal display */
-    height:20%;
+    height:15%;
 }
 #projectContent {
     /* project list */
-    height:450px;
+    height:75%;
 }
 #projectContent li{
     /* Individual projects */
@@ -172,17 +197,30 @@
     transform:rotate(-2deg);
 }
 /* Newly Added */
-@media only screen and (max-width:1000px) {
+@media only screen and (min-width:1550px) and (min-height:500px){
     #projectContent{
-        margin-bottom:20%;
+        height:75%;
+        margin-bottom:5%;
+    }
+}
+@media only screen and (max-width:1200px){
+    #mainContent section:first-child {
+        /* Project displays */
+        height:fit-content;
+    }
+    #projectContent{
+        margin-top:50px;
+        height:100%;
+        flex-wrap:wrap;
     }
     #projectContent li{
-        height:350px;
-    } 
-}
-@media only screen and (max-height:750px){
-    #projectContent{
-        margin-bottom:10%;
+        margin-top:50px;
+        margin-left:auto;
+        margin-right:auto;
+        width:250px;
+        height:300px;
     }
-}
+    #GoalSection{
+        margin-top:5%;
+    }
 }
