@@ -1,4 +1,5 @@
 <!DOCTYPE hmtl>
+<!-- Organize and insert materials -->
 <html>
     <head>
         <meta charset="UTF-8">
@@ -7,113 +8,46 @@
         <meta name="description" content="Diyi's portfolio">
         <meta name="viewport" cotent="width=device-width, initial-scale=1.0">
         <title>Diyi's Portfolio</title>
-        <link rel="stylesheet" type="text/css" href="TemplateCSS.css">
+        <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans|Permanent+Marker&display=swap" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="../../TemplateCSS.css">
+        <link rel="stylesheet" type="text/css" href="../../CurrentPageCSS.css">
         <link rel="icon" href="Logo/Personal_Logo1_icon.ico">    
         <script>
             console.log("Current screen width " + screen.width +" px");
         </script>
         <style>
-            #leftBar{
-                /* Left Navigation and information */
-                height:100%;
-                width:15%;
-                text-align:right;
+            .Navigation li:nth-child(3) a{
+                text-decoration: overline underline dashed;
+                text-decoration-color:brown;
+                font-size:larger;
+                font-weight:bolder;
             }
-            .Navigation{
-                /* border:1px solid black; */
-                position:relative;
-                margin:0;
-                padding:5px 0px 5px 0px;
-                width:50%;
-                height:fit-content;
-
-                display:flex;
-                flex-direction:row;
-                margin-left:auto;
-                margin-right:auto;
-
-                background-image:linear-gradient(to bottom,rgba(227,171,44,0.5)0%,rgba(60,41,0,1)100%),url('Texture/hip-square/hip-square.png');
-                background-blend-mode:overlay,normal;
-                background-repeat:repeat;
-                box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.25);  
+            .leftNav:nth-child(2) a{
+                text-decoration: overline underline dashed;
+                text-decoration-color: brown;
             }
-            .Navigation li{
-                border-left:1px solid black;
-                width:100%;  
-                margin-left:5px;
-                margin-right:5px;
-            }
-            .Navigation li:first-child{
-                border-left:none;
-            }
-
-            /* Project Contents */
-            .projectContent{
-                /* border:1px solid black; */
-                margin:0;
-                padding:0;
-                display:flex;
-                flex-direction:row;
-                width:100%;
-                height:fit-content;
-            }
-            .projectContent li{
-                /* border:1px solid black; */
-                width:100%;
-            }
-            @media only screen and (max-width:1600px) and (min-height:500px){
-            .logo{
-            /* border:1px solid black; */
-             width:100%;
-              height:125px;
-            }
-            .leftNav{
-                margin-top:30px;
-                padding:10px 0px 10px 0px;
-            }
-            #topBar h1{
-                padding:10px 25px 10px 25px;
-            }
-            #pin1{
-                top:0;
-                left:-5px;
-            }
-            #pin2{
-                bottom:0;
-                right:-5px;
-            }
-
-            /* Project contents */
-            #mainContent{
-                margin-top:10px;
-            }
-            #currentProject1,#currentProject2{
-                /* border:1px solid black; */
-                width:500px;
-                height:550px;
-            }
-            .projectDescription{
-                margin-top:10px;
-                margin-right:10px;
-
-                background-image:url('Texture/linedpaper/linedpaper.png');
-                background-repeat:repeat;
-                box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.25);  
-            }
-
+            .ImageContents{
+                background-image:url('../../Images/Current.svg');
             }
         </style>
     </head>
     <body>
         <div id="leftBar">
             <section>
-                <a href="index.html"><img class="logo" src="Logo/StainLogo.svg" /></a>
+                <a href="index.html"><img class="logo" src="../../Logo/StainLogo.svg" /></a>
                 <ul>
                     <li class="leftNav">
-                        <a href="DiyiLiu_Portfolio_Current_MadTea.html">MadTea</a>
+                        <div class="pin" id="pin3"></div>
+                        <a href="../../DiyiLiu_Portfolio_Current_MadTea.html">MadTea</a>
                     </li>
                     <li class="leftNav">
-                        <a href="ReferenceLinks/Current/TypeWriter.html">TypeWriter</a>
+                        <div class="pin" id="pin4"></div>
+                        <a href="TypeWriter.html">TypeWriter</a>
+                    </li>
+                    <li class="leftNav">
+                        <div class="pin" id="pin7"></div>
+                        <a href="MyPortfolio.html">MyPortfolio</a>
                     </li>
                 </ul>
             </section>
@@ -123,31 +57,27 @@
             <header id="topBar">
                 <h1>
                     <div class="pin" id="pin1"></div>
-                    I'm Currently Working On...
+                    I'm Currently Working On...(Under Construction)
                     <div class="pin" id="pin2"></div>
                 </h1>
-                <div>
+                <div class="NavBar">
                     <ul class="Navigation">
+                        <div class="pin" id="pin5"></div>
                         <li><a href="index.html">Home</a></li>
-                        <li><a href="DiyiLiu_Portfolio_Current_MadTea.html">Current Projects</a></li>
-                        <li><a href="DiyiLiu_Portfolio_Web.html">Web Projects</a></li>
-                        <li><a href="DiyiLiu_Portfolio_Other.html">Other Projects</a></li>
+                        <li><a href="../../DiyiLiu_Portfolio_Current_MadTea.html">Current Projects</a></li>
+                        <li><a href="../../DiyiLiu_Portfolio_Web.html">Web Projects</a></li>
+                        <li><a href="../../DiyiLiu_Portfolio_Other.html">Other Projects</a></li>
+                        <div class="pin" id="pin6"></div>
                     </ul>
                 </div>
             </header>
             <div id="mainContent">
-                <section> 
-                    <ul class="projectContent">
-                        <li class="ProjectImages">
-                            <div class="projectTemplate" id="currentProject1"><div class="TapeTemplate" id="tape1"></div>
-                            <!-- <a href="DiyiLiu_Portfolio_Current.html">
-                                <div class="projectImage"></div>
-                                <div class="projectTemplateDescription">Image description</div>
-                            </a> -->
-                            </div>
-                        </li>
-                        <li class="projectDescription">Type Writer</li>
-                    </ul>
+                    <div class="projectDescription">
+                        <div class="TapeTemplate" id="tape5"></div>
+                        <div class="ImageContents">slideshow</div>
+                        <h3>TypeWriter</h3>
+                        <p>Project Descriptions</p>
+                    </div>
                 </section>
             </div>
         </div>
