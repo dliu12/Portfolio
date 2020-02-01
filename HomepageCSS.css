@@ -17,12 +17,60 @@
     left:45%;
     height:115px;
 }
+/* Navigations and Logos */
+#topBar{ 
+    /* header Welcome section */    
+    height:12%;
+    max-height:100px;
+}
+    /* topBar Deco Css */
+    #topBar h1{
+        line-height:1.75em;
+        padding-left:75px;
+        padding-right:75px;
+        transform: rotate(-0.5deg);
+    }
+    #topBar #pin1{
+        left:-5px;
+        top:0px;
+    }
+    #topBar #pin2{
+        right:-5px;
+        bottom:0px;
+    }    
+#leftBar{
+    /* Left Navigation and information */
+    height:100%;
+    width:15%;
+    text-align:right;
+}
+.logo{
+    /* border:1px solid black; */
+    width:100%;
+    height:125px;
+}
 .leftNav{
+    /* Left Navigation and information content */
+    margin-top:50px;
+    margin-left:auto;
+    margin-right:10px;
+    padding-right:5px;
+    height:250px;
+    width:80%;
+    min-width:100px;
+    transform:rotate(-1deg); 
+
     font-family:'Open Sans', sans-serif;
     font-size:14px;
     font-weight:bold;
     color:rgba(60,54,50,0.88);
 }
+.contactInfo {
+    /* Left Nav info */
+    margin-top:15px;
+    word-wrap: break-word;
+}
+
 .contactInfo span{
     font-size:13px;
     font-style:italic;
@@ -31,6 +79,7 @@
 #mainContent section:first-child {
     /* project displays */
     position:relative;
+    height:85%;
 }
 #mainContent section:last-child{
     /* goal displays */
@@ -39,6 +88,7 @@
     margin-left:auto;
     margin-right:auto;
     text-align:center;
+    height:15%;
 
     display:flex;
     flex-direction:row;
@@ -52,13 +102,19 @@
     display:flex;
     flex-direction:row;
     width:100%;
+    height:75%;
 }
 #projectContent li{
     /* Individual projects */
+    margin:3%;
     width:100%;
 }
-
 #GoalSection h3{
+    padding:0;
+    padding-left:20px;
+    padding-right:30px;
+    margin:0;  
+
     background-image:linear-gradient(to bottom,rgba(109, 81, 17, 0.25)0%,rgb(53, 38, 5,0.25)100%),url('Texture/linedpaper/linedpaper.png');
     background-blend-mode:color-burn,normal;
     background-repeat:repeat;
@@ -68,11 +124,13 @@
     height:fit-content;
     text-align:center;
 
+    line-height:2em;
     font-family:'Open Sans',sans-serif;
     color:rgba(60,54,50,0.88);
-    font-size:14px;
+    font-size:30px;
     font-style: italic;
     font-weight: lighter;
+
 }
 #GoalSection h3 span{
     padding-left:10px;
@@ -80,6 +138,19 @@
     color:rgba(155, 17, 17,0.80);
     font-size:35px;
 }
+    /* Goal Section Deco CSS*/
+    #GoalSection #tape4{
+        height:40px;
+        left:-30px;
+        top:5px;
+        transform: rotate(1.5deg);
+    }
+    #GoalSection #tape5{
+        height:43px;
+        right:-30px;
+        top:5px;
+        transform:rotate(-2deg);
+    }    
 #current .projectImage{
     background-image:linear-gradient(180deg,rgba(102,102,102,0.5)0%,rgba(26,9,0,1)100%), url('Images/Current.svg');
 }
@@ -111,92 +182,7 @@
     background-position:center;
 }
 
-
-/* Screen width max 13-inch */
-#topBar{ 
-    /* header Welcome section */    
-    height:12%;
-    max-height:100px;
-}
-#leftBar{
-    /* Left Navigation and information */
-    height:100%;
-    width:15%;
-    text-align:right;
-}
-.logo{
-    /* border:1px solid black; */
-    width:100%;
-    height:125px;
-}
-.leftNav{
-    /* Left Navigation and information content */
-    margin-top:50px;
-    margin-left:auto;
-    margin-right:10px;
-    padding-right:5px;
-    height:250px;
-    width:80%;
-    min-width:100px;
-    transform:rotate(-1deg); 
-}
-.contactInfo {
-    /* Left Nav info */
-    margin-top:15px;
-    word-wrap: break-word;
-}
-#mainContent section:first-child {
-    /* Project displays */
-    height:85%;
-}
-#mainContent section:last-child{
-    /* Goal display */
-    height:15%;
-}
-#projectContent {
-    /* project list */
-    height:75%;
-}
-#projectContent li{
-    /* Individual projects */
-    margin:3%;
-}
-#topBar h1{
-    line-height:1.75em;
-    padding-left:75px;
-    padding-right:75px;
-    transform: rotate(-0.5deg);
-}
-#topBar #pin1{
-    left:-5px;
-    top:0px;
-}
-#topBar #pin2{
-    right:-5px;
-    bottom:0px;
-}
-#GoalSection h3{
-    padding:0;
-    padding-left:20px;
-    padding-right:30px;
-    margin:0;  
-
-    line-height:2em;
-    font-size:30px;
-}
-#GoalSection #tape4{
-    height:40px;
-    left:-30px;
-    top:5px;
-    transform: rotate(1.5deg);
-}
-#GoalSection #tape5{
-    height:43px;
-    right:-30px;
-    top:5px;
-    transform:rotate(-2deg);
-}
-/* Newly Added */
+/* Media Queries */
 @media only screen and (min-width:1550px) and (min-height:500px){
     #projectContent{
         height:75%;
@@ -224,3 +210,4 @@
         margin-top:5%;
     }
 }
+

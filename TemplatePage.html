@@ -1,4 +1,5 @@
 <!DOCTYPE hmtl>
+<!-- Organize and insert materials -->
 <html>
     <head>
         <meta charset="UTF-8">
@@ -7,46 +8,76 @@
         <meta name="description" content="Diyi's portfolio">
         <meta name="viewport" cotent="width=device-width, initial-scale=1.0">
         <title>Diyi's Portfolio</title>
-        <link rel="stylesheet" type="text/css" href="TemplateStyle.css">
-        <!-- <link rel="icon" href="Images\personal_logo2fill_Bbl_icon.ico"> -->    
+        <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans|Permanent+Marker&display=swap" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="TemplateCSS.css">
+        <link rel="stylesheet" type="text/css" href="CurrentPageCSS.css">
+        <link rel="icon" href="Logo/Personal_Logo1_icon.ico">    
         <script>
             console.log("Current screen width " + screen.width +" px");
         </script>
-
+        <style>
+            .Navigation li:nth-child(3) a{
+                text-decoration: overline underline dashed;
+                text-decoration-color:brown;
+                font-size:larger;
+                font-weight:bolder;
+            }
+            .leftNav:first-child a{
+                text-decoration: overline underline dashed;
+                text-decoration-color: brown;
+            }
+            .ImageContents{
+                background-image:url('Images/Current.svg');
+            }
+        </style>
     </head>
     <body>
         <div id="leftBar">
             <section>
-                <picture id="logo">
-                </picture>
-                <ul id="leftNav">
-                        <li>
-                            School
-                        </li>
-                        <li>
-                            Email
-                        </li>
-                        <li>
-                            Phone
-                        </li>
-                    </ul>
+                <a href="index.html"><img class="logo" src="Logo/StainLogo.svg" /></a>
+                <ul>
+                    <li class="leftNav">
+                        <div class="pin" id="pin3"></div>
+                        <a href="DiyiLiu_Portfolio_Current_MadTea.html">MadTea</a>
+                    </li>
+                    <li class="leftNav">
+                        <div class="pin" id="pin4"></div>
+                        <a href="ReferenceLinks/Current/TypeWriter.html">TypeWriter</a>
+                    </li>
+                    <li class="leftNav">
+                        <div class="pin" id="pin7"></div>
+                        <a href="ReferenceLinks/Current/TypeWriter.html">MyPortfolio</a>
+                    </li>
+                </ul>
             </section>
         </div>
         <div id ="generalContent">
 
             <header id="topBar">
-                <h1>Welcome Message</h1>
+                <h1>
+                    <div class="pin" id="pin1"></div>
+                    I'm Currently Working On...(Under Construction)
+                    <div class="pin" id="pin2"></div>
+                </h1>
+                <div class="NavBar">
+                    <ul class="Navigation">
+                        <div class="pin" id="pin5"></div>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="DiyiLiu_Portfolio_Current_MadTea.html">TemplatePage</a></li>
+                        <li><a href="DiyiLiu_Portfolio_Web.html">Web Projects</a></li>
+                        <li><a href="DiyiLiu_Portfolio_Other.html">Other Projects</a></li>
+                        <div class="pin" id="pin6"></div>
+                    </ul>
+                </div>
             </header>
             <div id="mainContent">
-                <section>
-                    <ul id="projectContent">
-                        <li class="projectTemplate">Content 1</li>
-                        <li class="projectTemplate">Content 2</li>
-                        <li class="projectTemplate">Content 3</li>
-                    </ul>
-                </section>
-                <section>
-                    <h3>Goal</h3>
+                    <div class="projectDescription">
+                        <div class="TapeTemplate" id="tape5"></div>
+                        <div class="ImageContents">slideshow</div>
+                        <h3>Mad Tea</h3>
+                        <p>Project Descriptions</p>
+                    </div>
                 </section>
             </div>
         </div>
