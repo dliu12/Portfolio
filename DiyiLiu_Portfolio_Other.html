@@ -13,8 +13,18 @@
         <link rel="stylesheet" type="text/css" href="TemplateCSS.css">
         <link rel="stylesheet" type="text/css" href="CurrentPageCSS.css">
         <link rel="icon" href="Logo/Personal_Logo1_icon.ico">    
+        <script src="functions.js"></script>  
         <script>
+           function myFunction(){
             console.log("Current screen width " + screen.width +" px");
+            const ImageArr = ["Images/OtherPictures/Cat_face.png","Images/OtherPictures/Double_face.png","Images/OtherPictures/Double_face2.png","Images/OtherPictures/Grimreaper_face.png","Images/OtherPictures/Lollipop_face.png","Images/OtherPictures/Oni_face.png","Images/OtherPictures/BumbleBee1.png","Images/OtherPictures/BumbleBeeLogo.png"];
+
+            var element = document.getElementsByClassName("ImageContents")[0];
+            element.style.backgroundImage = "url("+ImageArr[0]+")";
+            let ImageLength = ImageArr.length;
+            
+            setInterval(function(){Slide(ImageLength,element,ImageArr)},3000);
+           }
         </script>
         <style>
             .Navigation li:nth-child(5) a{
@@ -27,12 +37,9 @@
                 text-decoration: overline underline dashed;
                 text-decoration-color: brown;
             }
-            .ImageContents{
-                background-image:url('Images/Current.svg');
-            }
         </style>
     </head>
-    <body>
+    <body onload="myFunction()">
         <div id="leftBar">
             <section>
                 <a href="index.html"><img class="logo" src="Logo/StainLogo.svg" /></a>
@@ -40,22 +47,6 @@
                     <li class="leftNav">
                         <div class="pin" id="pin3"></div>
                         <a href="DiyiLiu_Portfolio_Other.html">CAD Projects</a>
-                    </li>
-                    <li class="leftNav">
-                        <div class="pin" id="pin4"></div>
-                        <a href="ReferenceLinks/Web/Focus.html">Focus!</a>
-                    </li>
-                    <li class="leftNav">
-                        <div class="pin" id="pin7"></div>
-                        <a href="ReferenceLinks/Web/ColorMixer.html">ColorMixer</a>
-                    </li>
-                    <li class="leftNav">
-                        <div class="pin" id="pin8"></div>
-                        <a href="ReferenceLinks/Web/Smash.html">SMASH!</a>
-                    </li>
-                    <li class="leftNav">
-                        <div class="pin" id="pin9"></div>
-                        <a href="ReferenceLinks/Web/Smash_3D.html">Smash3D_EggEarth</a>
                     </li>
                 </ul>
             </section>
@@ -82,7 +73,7 @@
             <div id="mainContent">
                     <div class="projectDescription">
                         <div class="TapeTemplate" id="tape5"></div>
-                        <div class="ImageContents">slideshow</div>
+                        <div class="ImageContents"></div>
                         <h3>Project1</h3>
                         <p>Project Descriptions</p>
                     </div>

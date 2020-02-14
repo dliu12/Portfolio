@@ -88,13 +88,18 @@
     padding-left:10px;
 }
 .ImageContents{
-    border:1px solid black;
+    /* border:1px solid black; */
     width:450px;
     height:450px;
     margin:5px 5px auto auto;
     
     float:right;
     clear:none;
+
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-clip: content-box;
+    background-position:center;
 }
 
 /* Page Deco CSS (Pins and Tapes) */

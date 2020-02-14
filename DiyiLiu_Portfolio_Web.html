@@ -12,9 +12,19 @@
         <link href="https://fonts.googleapis.com/css?family=Open+Sans|Permanent+Marker&display=swap" rel="stylesheet">
         <link rel="stylesheet" type="text/css" href="TemplateCSS.css">
         <link rel="stylesheet" type="text/css" href="CurrentPageCSS.css">
-        <link rel="icon" href="Logo/Personal_Logo1_icon.ico">    
+        <link rel="icon" href="Logo/Personal_Logo1_icon.ico">  
+        <script src="functions.js"></script>  
         <script>
+           function myFunction(){
             console.log("Current screen width " + screen.width +" px");
+            const ImageArr = ["Images/3WayCom/3WayCom1.png","Images/3WayCom/3WayCom6.png"];
+
+            var element = document.getElementsByClassName("ImageContents")[0];
+            element.style.backgroundImage = "url("+ImageArr[0]+")";
+            let ImageLength = ImageArr.length;
+            
+            setInterval(function(){Slide(ImageLength,element,ImageArr)},2500);
+           }
         </script>
         <style>
             .Navigation li:nth-child(4) a{
@@ -27,12 +37,9 @@
                 text-decoration: overline underline dashed;
                 text-decoration-color: brown;
             }
-            .ImageContents{
-                background-image:url('Images/Current.svg');
-            }
         </style>
     </head>
-    <body>
+    <body onload = "myFunction()">
         <div id="leftBar">
             <section>
                 <a href="index.html"><img class="logo" src="Logo/StainLogo.svg" /></a>
@@ -82,7 +89,7 @@
             <div id="mainContent">
                     <div class="projectDescription">
                         <div class="TapeTemplate" id="tape5"></div>
-                        <div class="ImageContents">slideshow</div>
+                        <div class="ImageContents"></div>
                         <h3>3Way Communicator</h3>
                         <p>Project Descriptions</p>
                     </div>
