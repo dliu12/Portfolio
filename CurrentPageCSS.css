@@ -84,7 +84,7 @@
     font-family:'Open Sans', sans-serif;
 
 }
-.projectDescription h3,p{
+.projectDescription h3,p,strong{
     padding-left:10px;
 }
 .ImageContents{
