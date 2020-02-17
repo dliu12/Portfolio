@@ -90,8 +90,72 @@
                     <div class="projectDescription">
                         <div class="TapeTemplate" id="tape5"></div>
                         <div class="ImageContents"></div>
-                        <h3>3Way Communicator</h3>
-                        <p>Project Descriptions</p>
+                        <h3><a href="https://3waycomu-sqlite.glitch.me/" target="_blank">3Way Communicator</a></h3>
+                        <strong>Summary:</strong>
+                        <p>
+                            &nbsp; &nbsp;&nbsp; &nbsp;3Way Communication is a web page that imitates a multi-user messenger/message board. It uses JavaScript to convert all textual inputs into musical tones and color patters and uses SQLite (provided by glitch.com)as back-end medium to store and fetch data.
+                        </p>
+                        <strong>Details:</strong>
+                        <p>
+                            <span style="font-weight:bold;">&nbsp; &nbsp;&nbsp; &nbsp;The motivation</span> of 3WayCommunicator came
+                            from The
+                            <a href="https://cooper.edu/projects/interactive-light-studio" target="_blank" style="text-decoration: underline;">Interactive Light Studio (ILS)</a>
+                            project established by Cooper Union students back in 2010, where it
+                            aimed to explore interactive ways to help hearing impaired studetns
+                            to perceive sound. Most of the projects created in the Interactive
+                            Light Studio dealth with relating different properties of sound,
+                            such as frequency and amplitude, to the color spectrum.
+                        </p>
+                        <p>
+                            &nbsp; &nbsp;&nbsp; &nbsp; Organizations like the National Orchestra
+                            of Wales and the Museo Del Prado(Spanish National Museum) have made
+                            interesting approaches to help bridge the gap between the hearing
+                            impaired/visually impaired community and the hearing/sighted
+                            community. For example, the National Orchestra of Wales had set up
+                            concerts with sound boxes to allow hearing impaired people to
+                            experience sound by directly feeling the vibration; Museo Del Prado
+                            had displayed art works with special textures to allow the visually
+                            impaired people to experience art work through their sense of touch.
+                          </p>
+                          <p>
+                            &nbsp; &nbsp;&nbsp; &nbsp;It was interesting to consider
+                            alternatives to these methods. What if the hearing impaired people
+                            can experience a concert through visual patterns? Similarly, what if
+                            the visually impaired people can experience a piece of art work
+                            through music? This project serves as a testing ground, a first
+                            step, to this concept.
+                          </p>
+                          <p>
+                            <span style="font-weight:bold;">&nbsp; &nbsp;&nbsp; &nbsp;The goal of this project is</span> to take people
+                            away from their usual comfort zone in online communication, text, and
+                            instead uses color and/or musical patterns as the main tool for
+                            communication.
+                          </p>
+                          <p>
+                            &nbsp; &nbsp;&nbsp; &nbsp;The user input is gathered thrugh textual
+                            input, and submitted through forms. Before the input is stored, it is
+                            converted to color patterns and as well as to musical tones via the
+                            two function snippets shown below:
+                            <i>(to be inserted)</i>
+                          </p>
+                          <p>
+                            &nbsp; &nbsp;&nbsp; &nbsp;The input is split and stored in an array
+                            and each alphabet/number is mapped to a specific color and to a
+                            specific tone. The blank spaces are being mapped to the background
+                            volor of the text box in the color conversion function, and to a pause
+                            in the tone conversion function.
+                          </p>
+                          <p>
+                            &nbsp; &nbsp;&nbsp; &nbsp;The converted input is then stored using
+                            SQLite, an open source provided on glitch.com. Since the project did
+                            not use API such as webSocket to update messages from multiple users,
+                            it was necessary for the site to constantly fetch data to update the
+                            display. By converting the input first then storing, it provides some
+                            optimization in loading speed of the website, as the site does not
+                            have to convert the input everytime it reloads to update the message
+                            board.
+                          </p>
+                          
                     </div>
                 </section>
             </div>

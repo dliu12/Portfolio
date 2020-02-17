@@ -1,4 +1,7 @@
 /* Home Page */
+#mainContent{
+    height:100%;
+}
 #tape1{
     transform:rotate(5deg);
     margin-top:-65px;
