@@ -94,15 +94,21 @@
                         <h3>Focus!</h3>
                         <strong>Summary:</strong>
                         <p>
-                            &nbsp; &nbsp;&nbsp; &nbsp;‘Focus!’ is a chrome extension that blocks any webpage, not including a new tab page, with a blue screen and a count-down timer that notify the user with the remaining block-out time. 
+                            &nbsp; &nbsp;&nbsp; &nbsp;‘Focus!’ is a chrome extension that will block any website (not including new-tab) with a blue screen and a count down timer. The user has the freedom to choose the block-out time in intervals of minutes at the beginning of the extension.
                         </p>
                         <strong>Details:</strong>
                         <p>
                             <span style="font-weight:bold">&nbsp; &nbsp;&nbsp; &nbsp;The motivation of this project is to</span> help the target audiences to avoid distraction that comes from browsing and focus on their work at hand. The appearance of the project was designed to be very simplistic, with only a shade of blue as background and a count-down timer to denote the block out time. 
                         </p>
                         <p>
-                            &nbsp; &nbsp;&nbsp; &nbsp;The extension gathers input through prompt answers. It will ask for the user’s permission to start the plugin, and then ask the user to customize the block out time in terms of minutes. To ensure that the user input is a valid integer input, the program will first check against possible inputs such as “15 minutes”, “minutes” and “15”, where only the last one is considered a valid input. The program will parse through the input and return only the number. Thus inputs such as “15 minutes” will be viewed the same as “15”, and inputs such as “minutes” will be returned as “undefined”. The returned values will go through a second check, which will differentiate between a number and NaN. If the input is determined to be number, then the timer will be set to that input. Else, if the input is determined to be NaN, then the timer will be set to the default value, “15”.
-
+                            &nbsp; &nbsp;&nbsp; &nbsp;The extension gathers input through prompt answers. It will ask for the user’s permission at the before activating, and will only start after the user gives permission. The user can then set the amount of time that he wants the extension to work for. Since the extension only accepts integer input, to ensure that the user has provided a valid input, the program will perform a series of checks. The first check is whether if the user has inputted anything; the program is defaulted to 15 minutes unless the user specifies otherwise. The second check is whether if the user has inputted any valid integer if he had inputted something.Some possible input checks are against answers such as “15 minutes”, “minutes” and “15”, where only the last one is technically considered as a valid input. The program will parse through the input and return only the number. Thus inputs such as “15 minutes” will be viewed the same as “15”, and inputs such as “minutes” will be returned as “undefined”. These returned values will go through a second check, which will differentiate between a number and NaN. If the input is determined to be number, then the timer will be set to that input. Else, if the input is determined to be NaN, then the timer will be set to the default value, “15”. The extension then proceeds to count down until the timer reaches 0. The brower window will then return to normal.
+                            &nbsp; &nbsp;&nbsp; &nbsp;The following code are snippets that are responsible for the count-down function:
+                            <div style ="width:fit-content;margin-right:auto;margin-left:auto;"> 
+                                <img style="width:100%;" src="../../Images/Focus/4.png" />
+                            </div>
+                        </p>
+                        <p>
+                            &nbsp; &nbsp;&nbsp; &nbsp;As future work, there are still many details about this project that can be improved. For example checking against various edge casees that deals with user input. Ideally an improved version would also contain more customizatble options such as a function that allows the user to choose the background of the block out screen.
                         </p>
                     </div>
                 </section>
