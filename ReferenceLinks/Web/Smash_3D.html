@@ -37,6 +37,15 @@
                 text-decoration: overline underline dashed;
                 text-decoration-color: brown;
             }
+            .inlineImg{
+                width:75%;
+                margin-left:auto;
+                margin-right:auto;
+            }
+            .inlineItems{
+                width:100%;
+                margin-bottom:10px;
+            }
         </style>
     </head>
     <body onload = "myFunction()">
@@ -89,12 +98,28 @@
                     <div class="projectDescription">
                         <div class="TapeTemplate" id="tape5"></div>
                         <div class="ImageContents"></div>
-                        <h3>Smash3D_EggEarth</h3>
+                        <h3><a href="https://3deggearth.glitch.me/" target="_blank">Smash3D_EggEarth</a></h3>
                         <strong>Summary:</strong>
                         <p>
-                            &nbsp; &nbsp;&nbsp; &nbsp;
+                            &nbsp; &nbsp;&nbsp; &nbsp;Smash3D-EggEarth is a 3D implementation of an older project, <a href="Smash.html">SMASH</a>. The main goal of this project is to explore the tools provided by WebGL in regards to 3D modeling. The gaming mechanic is similar to that for SMASH.
                         </p>
                         <strong>Details:</strong>
+                        <p>&nbsp; &nbsp;&nbsp; &nbsp;Since Smash3D is a re-implementation of SMASH, the general design is the same as that for SMASH including its user control mechanic, where the user repetitively press the dedicated key to attack. Due to time restriction, only a simpler version of player versus computer mode is implemented. The main focus of the project is the 3D modeling as WebGL provided the possibility of creating semi-realistic egg shaped Earth by allowing textures and lighting to be applied to the 3D object.</p> 
+                        <p>&nbsp; &nbsp;&nbsp; &nbsp;The earth model started out as a simple egg shaped solid with a constant light source located on the top right-hand corner. To achieve its earth-like profile, three layers of texture mapping was applied to the solid. The following are samples of the three texture layers: 
+                            <div class="inlineImg"> 
+                                <i>The base texture:</i>
+                                <img class="inlineItems" src="../../Images/Smash3D/EarthMap1.jpg" />
+                                <i>The two layers to create clouds and highlights on the mountain regions:</i>
+                                <img class="inlineItems" src="../../Images/Smash3D/EarthCloudMap1.jpg"/>
+                                <img class="inlineItems" src="../../Images/Smash3D/EarthBumpMap1.jpg"/>
+                            </div>
+                        </p>
+                        <p>&nbsp; &nbsp;&nbsp; &nbsp;Lastly, to create a shinning, gem-like appearance, a randomly generated number awas added to each of the normal vertices of the egg's surface and created the scattered light effect.
+                        </p>
+                        <p>&nbsp; &nbsp;&nbsp; &nbsp;To imitate the rotating motion of the earth, the viewer camera was set to revolve around the origin. As a result, the player will see changes in the lighting of the object. This rotating camera is also used later on in the computer's attacking mechanism.</p>
+                        <p>&nbsp; &nbsp;&nbsp; &nbsp;The main attack feature stayed the same, the computer will attack at a constant rate using the setInterval() function. However, a small change was made to the attack feature: the computer will only attack the player when the player is within a certain view angle.</p>
+                        <p>&nbsp; &nbsp;&nbsp; &nbsp;Once the player falls "out of sight", the attack wills top, hence it is the oppotune moment for the player to attack. Though it was not implemented in this version of the game, customizable difficulty level is a feature that I would to add in the future. I would also like to explore the possible feature where the player can control the viewer camera with the egg to rotate about its own axis and thsu including features such as dodging in future games.</p>
+
                     </div>
                 </section>
             </div>
