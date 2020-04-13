@@ -15,16 +15,31 @@
         <link rel="icon" href="Logo/Personal_Logo1_icon.ico">    
         <script src="functions.js"></script>  
         <script>
-           function myFunction(){
+            function cuckooFunction(){
             console.log("Current screen width " + screen.width +" px");
-            const ImageArr = ["Images/OtherPictures/Cat_face.png","Images/OtherPictures/Double_face.png","Images/OtherPictures/Double_face2.png","Images/OtherPictures/Grimreaper_face.png","Images/OtherPictures/Lollipop_face.png","Images/OtherPictures/Oni_face.png","Images/OtherPictures/BumbleBee1.png","Images/OtherPictures/BumbleBeeLogo.png"];
+            const ImageArr = ["Images/OtherPictures/Cat_face.png","Images/OtherPictures/Double_face.png","Images/OtherPictures/Double_face2.png","Images/OtherPictures/Grimreaper_face.png","Images/OtherPictures/Lollipop_face.png","Images/OtherPictures/Oni_face.png"];
 
             var element = document.getElementsByClassName("ImageContents")[0];
             element.style.backgroundImage = "url("+ImageArr[0]+")";
+
             let ImageLength = ImageArr.length;
-            
-            setInterval(function(){Slide(ImageLength,element,ImageArr)},3000);
+            Slide(ImageLength,element,ImageArr);
            }
+
+           function bumbleFuction(){
+                const BumbleImgArr = ["Images/OtherPictures/BumbleBee1.png","Images/OtherPictures/BumbleBeeLogo.png"];
+                var bumbleElement = document.getElementsByClassName("ImageContents")[1];
+                bumbleElement.style.backgroundImage = "url("+BumbleImgArr[0]+")";
+                let BumbleImageLength = BumbleImgArr.length;
+                
+                Slide(BumbleImageLength,bumbleElement,BumbleImgArr);
+           }
+
+           function myFunction(){
+            cuckooFunction();
+            bumbleFuction();
+           }
+    
         </script>
         <style>
             .Navigation li:nth-child(5) a{
@@ -46,7 +61,7 @@
                 <ul>
                     <li class="leftNav">
                         <div class="pin" id="pin3"></div>
-                        <a href="DiyiLiu_Portfolio_Other.html">CAD Projects</a>
+                        <a href="DiyiLiu_Portfolio_Other.html">Fusion 360 CAD</a>
                     </li>
                 </ul>
             </section>
@@ -74,8 +89,16 @@
                     <div class="projectDescription">
                         <div class="TapeTemplate" id="tape5"></div>
                         <div class="ImageContents"></div>
-                        <h3>Project1</h3>
-                        <p>Project Descriptions</p>
+                        <h3>CuckooClock</h3>
+                        <strong>Summary:</strong>
+                        <p>&nbsp; &nbsp;&nbsp; &nbsp;CuckooClock is a Halloween themed toy clock assembly model created using Fusion360. The model won first place for SolidProfessor's 2018 CAD-loween design contest. Other than the traditional features that exist on a cuckoo clock, this model also features two wall panels that turn showing different profiles on each side. For example, one of the panels features a lollipop, and on the flip side of the same panel there is an Oni face, which is a traditional Japanese demon. The other panel features a cat on the front side and a grim reaper on the flip side. </p>
+                    </div>
+                    <div class="projectDescription">
+                        <div class="TapeTemplate" id="tape5"></div>
+                        <div class="ImageContents"></div>
+                        <h3>BumbleBee</h3>
+                        <strong>Summary:</strong>
+                        <p>&nbsp; &nbsp;&nbsp; &nbsp;BumbleBee is a model designed for SolidProfessor's winter CAD design challenge using Fusion 360. The theme of the model is a children's sled, and the appearance of the model was inspired by the movie, Bumblebee. The design attempted to imitate the features of a race car by adding in wheels and tail wings. A transformer logo plate was attached to the front of the sled.</p>
                     </div>
                 </section>
             </div>
