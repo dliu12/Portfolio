@@ -82,6 +82,8 @@
     min-height:500px;
     height:fit-content;
     font-family:'Open Sans', sans-serif;
+    line-height: 1.5;
+    color:#262626;
 
 }
 .projectDescription h3,p,strong{
