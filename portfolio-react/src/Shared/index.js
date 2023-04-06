@@ -1,2 +1,2 @@
-export { default as SideNavigator } from './SideNavigator';
-export { default as SocialMedia } from './SocialMedia';
+export { default as SideNavigator } from './SideNavigator/SideNavigator';
+export { default as SocialMedia } from './SocialMedia/SocialMedia';

@@ -1,0 +1,43 @@
+.SocialMedia__container {
+  position: fixed;
+  bottom: 0;
+  left: calc(50% - 250px);
+  width: 500px;
+  height: 170px;
+  background-image: url("../../img/blob.png");
+  background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.SocialMedia__container > ul {
+  padding: 0;
+  margin: 0;
+  border: none;
+  color: #533C02;
+  list-style-type: none;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (auto)[3];
+      grid-template-columns: repeat(3, auto);
+  grid-gap: 35px;
+  margin-top: 64px;
+  font-size: 40px;
+}
+
+.SocialMedia__container > ul a {
+  color: #533C02;
+  text-decoration: none;
+}
+
+.SocialMedia__container > ul a:hover, .SocialMedia__container > ul a:visited {
+  color: #533C02;
+}
+/*# sourceMappingURL=SocialMedia.css.map */

@@ -1,0 +1,12 @@
+@import '../variables.scss';
+@import '../mixins.scss';
+
+.ProjectNav{
+  @include clearListStyle();
+  width:fit-content;
+  cursor: pointer;
+  & > li {
+    @include clearLinkStyle();
+    text-align: right;
+  }
+}

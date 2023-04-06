@@ -1,0 +1,25 @@
+.ProjectNav {
+  padding: 0;
+  margin: 0;
+  border: none;
+  color: #533C02;
+  list-style-type: none;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  cursor: pointer;
+}
+
+.ProjectNav > li {
+  text-align: right;
+}
+
+.ProjectNav > li a {
+  color: #533C02;
+  text-decoration: none;
+}
+
+.ProjectNav > li a:hover, .ProjectNav > li a:visited {
+  color: #533C02;
+}
+/*# sourceMappingURL=ProjectNav.css.map */

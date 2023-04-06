@@ -1,0 +1,15 @@
+.App {
+  padding: 0;
+  margin: 0;
+  border: none;
+  color: #533C02;
+  position: relative;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 50px auto;
+      grid-template-rows: 50px auto;
+  height: 100%;
+  overflow-y: auto;
+  background: #8DAA5F;
+}
+/*# sourceMappingURL=App.css.map */

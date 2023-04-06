@@ -1,0 +1,12 @@
+{
+    "version": 3,
+    "mappings": "AAGA,AAAA,IAAI,CAAA;ECAF,OAAO,EAAE,CAAC;EACV,MAAM,EAAE,CAAC;EACT,MAAM,EAAC,IAAI;EACX,KAAK,ECNK,OAAO;EFKjB,QAAQ,EAAC,QAAQ;EACjB,OAAO,EAAE,IAAI;EACb,kBAAkB,EAAE,SAAS;EAC7B,MAAM,EAAC,IAAI;EACX,UAAU,EAAE,IAAI;EAChB,UAAU,EEPW,OAAO;CFQ7B",
+    "sources": [
+        "App.scss",
+        "mixins.scss",
+        "variables.scss",
+        "variables.scss"
+    ],
+    "names": [],
+    "file": "App.css"
+}
