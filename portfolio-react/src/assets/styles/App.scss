@@ -1,12 +1,12 @@
 @import 'mixins';
 @import 'variables';
 
-.App{
-  @include clearBaseStyle();
-  position:relative;
-  display: grid;
-  grid-template-rows: 50px auto;
-  height:100%;
-  overflow-y: auto;
-  background: $background-color-dark;
+.App {
+	@include clearBaseStyle();
+	position: relative;
+	display: grid;
+	grid-template-columns: 1fr 5fr;
+	height: 100%;
+	overflow-y: auto;
+	background: $background-color-dark;
 }

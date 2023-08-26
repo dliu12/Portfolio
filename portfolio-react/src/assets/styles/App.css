@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,700;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,700;1,700&display=swap");
 .App {
   padding: 0;
   margin: 0;
@@ -6,8 +8,8 @@
   position: relative;
   display: -ms-grid;
   display: grid;
-  -ms-grid-rows: 50px auto;
-      grid-template-rows: 50px auto;
+  -ms-grid-columns: 1fr 5fr;
+      grid-template-columns: 1fr 5fr;
   height: 100%;
   overflow-y: auto;
   background: #8DAA5F;

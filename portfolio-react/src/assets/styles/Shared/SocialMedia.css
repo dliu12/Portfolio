@@ -1,11 +1,13 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,700;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,700;1,700&display=swap");
 .SocialMedia__container {
-  position: fixed;
+  position: absolute;
   bottom: 0;
-  left: calc(50% - 250px);
-  width: 500px;
-  height: 170px;
-  background-image: url("../../img/blob.png");
-  background-size: cover;
+  left: 0;
+  width: 100%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -39,5 +41,10 @@
 
 .SocialMedia__container > ul a:hover, .SocialMedia__container > ul a:visited {
   color: #533C02;
+}
+
+.SocialMedia__container > ul .fontawesome {
+  -webkit-filter: drop-shadow(1px -1px rgba(0, 0, 0, 0.5));
+          filter: drop-shadow(1px -1px rgba(0, 0, 0, 0.5));
 }
 /*# sourceMappingURL=SocialMedia.css.map */

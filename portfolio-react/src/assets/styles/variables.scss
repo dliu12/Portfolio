@@ -1,18 +1,20 @@
 //imports
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,700;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Open+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
 
-$body-color:#533C02;
-$inverse-body-color:#FFFEF3;
+$body-color: #533c02;
+$inverse-body-color: #fffef3;
 
-$background-color-dark:#8DAA5F;
-$background-color-light:#D4DBC9;
-$socialMedia-background-color:#FFFBD6;
+$background-color-dark: #8daa5f;
+$background-color-light: #d4dbc9;
+$socialMedia-background-color: #fffbd6;
 
 //fonts
-$header-fontSize:48px;
-$body-fontSize:20px;
+$header-fontSize: 48px;
+$body-fontSize: 20px;
 $header-font: 'Montserrat', sans-serif;
+$body-font: 'Open Sans', sans-serif;
 //font-weight
 $bold: 700;
-$regular:400;
-$light:300;
+$regular: 400;
+$light: 300;
