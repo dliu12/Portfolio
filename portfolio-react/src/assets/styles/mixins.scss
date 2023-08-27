@@ -1,42 +1,62 @@
 @import 'variables.scss';
 
-@mixin clearBaseStyle (){
-  padding: 0;
-  margin: 0;
-  border:none;
-  color:$body-color;
+@mixin clearBaseStyle() {
+	padding: 0;
+	margin: 0;
+	border: none;
+	color: $body-color;
 }
 
-@mixin clearListStyle(){
-   @include clearBaseStyle();
-   list-style-type: none;
+@mixin clearListStyle() {
+	@include clearBaseStyle();
+	list-style-type: none;
 }
 
-@mixin clearLinkStyle(){
-  a{
-    color:$body-color;
-    text-decoration: none;
-    &:hover,&:visited{
-      color:$body-color
-    }
-  }
+@mixin clearLinkStyle() {
+	a {
+		color: $body-color;
+		text-decoration: none;
+		&:hover,
+		&:visited {
+			color: $body-color;
+		}
+	}
 }
 
-@mixin setBaseStyle(){
-  width: 100%;
-  height: 100%;
+@mixin setBaseStyle() {
+	width: 100%;
+	height: 100%;
 }
 
-@mixin setPagePadding(){
-
+@mixin setPagePadding() {
 }
 
-@mixin setSelfHCenter(){
-  margin: 0 auto;
+@mixin setSelfHCenter() {
+	margin: 0 auto;
 }
 
-@mixin setChildAbsCenter(){
-  display: flex;
-  justify-content: center;
-  align-items: center;
+@mixin setChildAbsCenter() {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+@mixin setBodyFontStyle() {
+	font-family: $body-font;
+	font-size: $body-fontSize;
+}
+
+@mixin wiggle() {
+	animation: wiggle 2s forwards;
+	@keyframes wiggle {
+		0% {
+			transform: rotateZ(-1deg);
+		}
+		66% {
+			transform: rotateZ(1deg);
+		}
+		100% {
+			transform: rotateZ(0);
+		}
+	}
 }

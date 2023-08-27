@@ -11,18 +11,24 @@ const ProjectNav = ({ pageType }) => {
 	const projectList = {
 		home: [],
 		web: [
-			{ name: 'SMASH!', link: '/smash' },
-			{ name: '3D SMASH!', link: '/3D_Smash' },
-			{ name: 'Focus!', link: '/focus' },
-			{ name: 'Mystery Communicator', link: '/3way_communicator' }
+			{ name: 'SMASH!', link: '/web/smash' },
+			{ name: '3D SMASH!', link: '/web/3D_Smash' },
+			{ name: 'Focus!', link: '/web/focus' },
+			{ name: 'Mystery Communicator', link: '/web/3way_communicator' }
 		],
-		other: [{ name: 'Fusion 360 CAD', link: '/fusion360_CAD' }]
+		other: [{ name: 'Fusion 360 CAD', link: '/other/fusion360_CAD' }]
 	}
 
 	return (
 		<nav>
 			<ul className='ProjectNav'>
-				{pageType === WEB ? <p>Web</p> : pageType === OTHER ? <p>other</p> : <Home />}
+				{pageType === WEB ? (
+					<ProjectDropDown projectList={projectList.web} />
+				) : pageType === OTHER ? (
+					<ProjectDropDown projectList={projectList.other} />
+				) : (
+					<Home />
+				)}
 			</ul>
 			<SocialMedia />
 		</nav>
@@ -49,6 +55,7 @@ const ProjectDropDown = ({ projectList }) => {
 		<React.Fragment>
 			{projectList.map((project, ind) => (
 				<li className='ProjectNav__items' key={`project-${ind}`}>
+					<Pin size={'15px'} position={{ top: '-5px', left: '100px' }} />
 					<Link to={project.url}>{project.name}</Link>
 				</li>
 			))}

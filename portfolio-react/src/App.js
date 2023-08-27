@@ -1,7 +1,6 @@
 import React from 'react'
 import { Outlet } from 'react-router-dom'
 import './assets/styles/App.css'
-import { SocialMedia } from './Shared'
 import { ProjectNav } from './components'
 import { HOME } from './general_util'
 
@@ -10,7 +9,7 @@ function App() {
 	return (
 		<div className='App'>
 			<ProjectNav pageType={pageType} />
-			<Outlet />
+			<Outlet context={[pageType, setPageType]} />
 		</div>
 	)
 }

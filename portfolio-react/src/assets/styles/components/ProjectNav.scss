@@ -11,12 +11,14 @@ nav {
 	box-shadow: 5px 0px 10px rgba(0, 0, 0, 0.5);
 	.ProjectNav {
 		@include clearListStyle();
+		padding: 16px;
+
 		& > .BasicContacts {
 			@include clearListStyle();
 			background-image: url('../../img//hip-square.png');
 			max-width: 230px;
 			height: 150px;
-			margin: 16px;
+
 			padding: 16px 8px;
 			transform: rotateZ(-2deg);
 			box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.25);
@@ -36,6 +38,19 @@ nav {
 					font-weight: $regular;
 					font-style: italic;
 				}
+			}
+		}
+		&__items {
+			@include clearLinkStyle();
+			position: relative;
+			margin-bottom: 16px;
+			padding: 16px 8px;
+			background-image: url('../../img//hip-square.png');
+			box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.25);
+
+			@include setBodyFontStyle();
+			&:hover {
+				@include wiggle();
 			}
 		}
 	}

@@ -1,46 +1,36 @@
 @import '../mixins.scss';
 @import '../variables.scss';
 
-.Page__introduction{
-  // @include setBaseStyle();
-  display: flex;
-  justify-content: center;
-  padding-top:52px;
+.Page__introduction {
+	// @include setBaseStyle();
 
-  &--profile{
-    max-width: 390px;
-    width:100%;
-    height:fit-content;
-    border:1px solid red;
-  }
-  &--text{
-    display: flex;
-    flex-direction: column;
-    margin-left: 48px;
-    width:fit-content;
-    max-width: 625px;
-    height:fit-content;
-    & > *{
-      @include clearBaseStyle();
-      font-size:$header-fontSize;
-      font-family: $header-font;
-      font-weight: $bold;
-      color:$inverse-body-color;
-    }
-    & > h1{
-      margin-bottom: 24px;
-    }
-    & > .Page__introduction--toProjects{
-      position: relative;
-      margin-top:24px;
-      font-size: 24px;
-      font-weight: $regular;
-      text-align: right;
-      .FontAwesome__link--arrowPointer{
-        position: absolute;
-        top:8px;
-        padding-left: 2px;
-      }
-    }
-  }
+	background: url('../../../assets//img//dust_scratches.png'),
+		linear-gradient(
+			9deg,
+			rgba(234, 234, 234, 1) 100%,
+			rgba(151, 151, 151, 0.25) 39%,
+			rgba(137, 137, 137, 0.25) 0%
+		);
+	background-blend-mode: multiply;
+	display: flex;
+	justify-content: center;
+	padding-top: 52px;
+	&--text {
+		display: flex;
+		flex-direction: column;
+		margin-left: 48px;
+		width: fit-content;
+		max-width: 625px;
+		height: fit-content;
+		& > * {
+			@include clearBaseStyle();
+			font-size: $header-fontSize;
+			font-family: $header-font;
+			font-weight: $bold;
+			color: $inverse-body-color;
+		}
+		& > h1 {
+			margin-bottom: 24px;
+		}
+	}
 }

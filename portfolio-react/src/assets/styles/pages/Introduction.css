@@ -1,6 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,700;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Open+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,700;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Open+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap");
 .Page__introduction {
+  background: url("../../../assets//img//dust_scratches.png"), linear-gradient(9deg, #eaeaea 100%, rgba(151, 151, 151, 0.25) 39%, rgba(137, 137, 137, 0.25) 0%);
+  background-blend-mode: multiply;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -8,15 +12,6 @@
       -ms-flex-pack: center;
           justify-content: center;
   padding-top: 52px;
-}
-
-.Page__introduction--profile {
-  max-width: 390px;
-  width: 100%;
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
-  height: fit-content;
-  border: 1px solid red;
 }
 
 .Page__introduction--text {
@@ -41,28 +36,14 @@
   padding: 0;
   margin: 0;
   border: none;
-  color: #533C02;
+  color: #533c02;
   font-size: 48px;
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
-  color: #FFFEF3;
+  color: #fffef3;
 }
 
 .Page__introduction--text > h1 {
   margin-bottom: 24px;
-}
-
-.Page__introduction--text > .Page__introduction--toProjects {
-  position: relative;
-  margin-top: 24px;
-  font-size: 24px;
-  font-weight: 400;
-  text-align: right;
-}
-
-.Page__introduction--text > .Page__introduction--toProjects .FontAwesome__link--arrowPointer {
-  position: absolute;
-  top: 8px;
-  padding-left: 2px;
 }
 /*# sourceMappingURL=Introduction.css.map */
