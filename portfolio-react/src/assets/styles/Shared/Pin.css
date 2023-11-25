@@ -1,0 +1,9 @@
+.pin {
+  position: absolute;
+  border-radius: 50%;
+  border: 1px solid #cc0000;
+  background: radial-gradient(circle farthest-side at 50% 25%, #ff6767, #9d0000);
+  -webkit-box-shadow: 0 5px 5px rgba(0, 0, 0, 0.75);
+          box-shadow: 0 5px 5px rgba(0, 0, 0, 0.75);
+}
+/*# sourceMappingURL=Pin.css.map */

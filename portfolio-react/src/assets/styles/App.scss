@@ -1,0 +1,14 @@
+@import "mixins";
+@import "variables";
+
+.App {
+	@include clearBaseStyle();
+	position: relative;
+	display: grid;
+	grid-template-columns: 1fr 5fr;
+	height: 100%;
+	overflow-y: hidden;
+	& > div {
+		overflow-y: auto;
+	}
+}

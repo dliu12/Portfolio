@@ -1,0 +1,40 @@
+@import "../variables.scss";
+@import "../mixins.scss";
+
+.PhotoCard {
+	position: relative;
+	border: 20px solid $background-color-gray;
+	background-color: $background-color-gray;
+	box-shadow: 2px 2px 4px $shade;
+	width: fit-content;
+	& > .PhotoCard__img {
+		position: relative;
+		& > .PhotoCard__img--cover {
+			position: absolute;
+			width: 100%;
+			height: 100%;
+			background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 1));
+			opacity: 0.7;
+			&:hover {
+				opacity: 0;
+				transition: opacity 0.5s;
+			}
+		}
+		& > img {
+			background-color: rgba(0, 0, 0, 0.75);
+			width: 350px;
+			aspect-ratio: 1/1;
+			@media screen and (max-width: 680px) {
+				width: 250px;
+			}
+		}
+	}
+	& > .PhotoCard__label {
+		@include clearBaseStyle();
+		width: 100%;
+		padding-top: 8px;
+		font-family: $decor-font;
+		font-size: 32px;
+		text-align: center;
+	}
+}

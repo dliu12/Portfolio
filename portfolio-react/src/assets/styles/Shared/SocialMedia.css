@@ -1,0 +1,53 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,700;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Open+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,700;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Open+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap");
+.SocialMedia__container {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.SocialMedia__container > ul {
+  padding: 0;
+  margin: 0;
+  color: #533c02;
+  list-style-type: none;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (auto)[3];
+      grid-template-columns: repeat(3, auto);
+  grid-gap: 35px;
+  margin-top: 64px;
+  font-size: 40px;
+}
+
+.SocialMedia__container > ul a {
+  color: #533c02;
+  text-decoration: none;
+}
+
+.SocialMedia__container > ul a:hover, .SocialMedia__container > ul a:visited {
+  color: #533c02;
+}
+
+.SocialMedia__container > ul .fontawesome {
+  -webkit-filter: drop-shadow(1px -1px rgba(0, 0, 0, 0.5));
+          filter: drop-shadow(1px -1px rgba(0, 0, 0, 0.5));
+}
+/*# sourceMappingURL=SocialMedia.css.map */

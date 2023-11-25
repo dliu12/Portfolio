@@ -1,0 +1,11 @@
+.pin {
+	position: absolute;
+	border-radius: 50%;
+	border: 1px solid #cc0000;
+	background: radial-gradient(
+		circle farthest-side at 50% 25%,
+		rgba(255, 103, 103, 1),
+		rgba(157, 0, 0, 1)
+	);
+	box-shadow: 0 5px 5px rgba(0, 0, 0, 0.75);
+}

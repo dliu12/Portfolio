@@ -1,0 +1,6 @@
+@import 'mixins';
+
+html,body, #root{
+  @include clearBaseStyle();
+  @include setBaseStyle();
+}

@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,KAAK,CAAA;EACD,QAAQ,EAAE,QAAQ;EAClB,UAAU,EAAC,+EAA2E;EACtF,MAAM,EAAC,mBAAmB;CAC7B",
+    "sources": [
+        "Tape.scss"
+    ],
+    "names": [],
+    "file": "Tape.css"
+}
