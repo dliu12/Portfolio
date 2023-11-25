@@ -1,11 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,700;1,700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Open+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,700;1,700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Open+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap");
 .App {
   padding: 0;
   margin: 0;
-  border: none;
   color: #533c02;
   position: relative;
   display: -ms-grid;
@@ -13,6 +14,10 @@
   -ms-grid-columns: 1fr 5fr;
       grid-template-columns: 1fr 5fr;
   height: 100%;
+  overflow-y: hidden;
+}
+
+.App > div {
   overflow-y: auto;
 }
 /*# sourceMappingURL=App.css.map */

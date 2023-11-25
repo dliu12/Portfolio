@@ -1,0 +1,59 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,700;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Open+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,700;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Open+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap");
+.PhotoCard {
+  position: relative;
+  border: 20px solid #d7d7d7;
+  background-color: #d7d7d7;
+  -webkit-box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
+          box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.PhotoCard > .PhotoCard__img {
+  position: relative;
+}
+
+.PhotoCard > .PhotoCard__img > .PhotoCard__img--cover {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(black));
+  background: linear-gradient(rgba(0, 0, 0, 0.5), black);
+  opacity: 0.7;
+}
+
+.PhotoCard > .PhotoCard__img > .PhotoCard__img--cover:hover {
+  opacity: 0;
+  -webkit-transition: opacity 0.5s;
+  transition: opacity 0.5s;
+}
+
+.PhotoCard > .PhotoCard__img > img {
+  background-color: rgba(0, 0, 0, 0.75);
+  width: 350px;
+  aspect-ratio: 1/1;
+}
+
+@media screen and (max-width: 680px) {
+  .PhotoCard > .PhotoCard__img > img {
+    width: 250px;
+  }
+}
+
+.PhotoCard > .PhotoCard__label {
+  padding: 0;
+  margin: 0;
+  color: #533c02;
+  width: 100%;
+  padding-top: 8px;
+  font-family: "Patrick Hand", cursive;
+  font-size: 32px;
+  text-align: center;
+}
+/*# sourceMappingURL=PhotoCard.css.map */

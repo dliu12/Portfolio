@@ -1,5 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,700;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Open+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,700;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Open+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap");
 .SocialMedia__container {
   position: absolute;
   bottom: 0;
@@ -22,8 +26,7 @@
 .SocialMedia__container > ul {
   padding: 0;
   margin: 0;
-  border: none;
-  color: #533C02;
+  color: #533c02;
   list-style-type: none;
   display: -ms-grid;
   display: grid;
@@ -35,12 +38,12 @@
 }
 
 .SocialMedia__container > ul a {
-  color: #533C02;
+  color: #533c02;
   text-decoration: none;
 }
 
 .SocialMedia__container > ul a:hover, .SocialMedia__container > ul a:visited {
-  color: #533C02;
+  color: #533c02;
 }
 
 .SocialMedia__container > ul .fontawesome {

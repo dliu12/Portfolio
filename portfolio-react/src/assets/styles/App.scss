@@ -1,5 +1,5 @@
-@import 'mixins';
-@import 'variables';
+@import "mixins";
+@import "variables";
 
 .App {
 	@include clearBaseStyle();
@@ -7,5 +7,8 @@
 	display: grid;
 	grid-template-columns: 1fr 5fr;
 	height: 100%;
-	overflow-y: auto;
+	overflow-y: hidden;
+	& > div {
+		overflow-y: auto;
+	}
 }
