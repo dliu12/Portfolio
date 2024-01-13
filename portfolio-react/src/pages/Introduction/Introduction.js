@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import OtherProjectImg from "../../assets/img/Introduction/Oni_face2.png";
 import WebProjectImg from "../../assets/img/Introduction/eggEarth1.png";
 import "../../assets/styles/pages/Introduction.css";
-import { Tape, PhotoCard, Pin } from "../../Shared/Decors";
+import { PhotoCard, Pin } from "../../Shared/Decors";
 
 const Introduction = () => {
 	return (
@@ -19,8 +19,12 @@ const Introduction = () => {
 				<Pin size={"15px"} position={{ bottom: "8px", right: "10px" }} />
 			</h1>
 			<section className='Page__introduction--projects'>
-				<PhotoCard imgSrc={WebProjectImg} photoLabel={"Web Projects"} />
-				<PhotoCard imgSrc={OtherProjectImg} photoLabel={"Other Projects"} />
+				<Link to='/web/smash' alt-text='Link to web projects'>
+					<PhotoCard imgSrc={WebProjectImg} photoLabel={"Web Projects"} />
+				</Link>
+				<Link to='' alt-text='Link to other projects'>
+					<PhotoCard imgSrc={OtherProjectImg} photoLabel={"Other Projects"} />
+				</Link>
 			</section>
 		</div>
 	);

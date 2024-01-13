@@ -1,0 +1,61 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,700;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Open+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap");
+.HorizontalNav {
+  position: relative;
+  width: 90%;
+  max-width: 500px;
+  padding: 12px 0;
+  background: url("../../img/hip-square.png");
+  -webkit-box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.25);
+          box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.25);
+}
+
+.HorizontalNav > ul {
+  padding: 0;
+  margin: 0;
+  color: #533c02;
+  list-style-type: none;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+}
+
+.HorizontalNav > ul a {
+  color: #533c02;
+  text-decoration: none;
+}
+
+.HorizontalNav > ul a:hover, .HorizontalNav > ul a:visited {
+  color: #533c02;
+}
+
+.HorizontalNav > ul > li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: "Open Sans", sans-serif;
+}
+
+.HorizontalNav > ul > li.--current {
+  font-weight: 700;
+}
+
+.HorizontalNav > ul > li :hover {
+  -webkit-text-decoration: underline wavy #bd1515;
+          text-decoration: underline wavy #bd1515;
+}
+
+.HorizontalNav > ul > li:nth-child(2) {
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+}
+/*# sourceMappingURL=HorizontalNav.css.map */

@@ -1,21 +1,22 @@
 //imports
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,700;1,700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Open+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,700;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Open+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap");
 
 $body-color: #533c02;
 $inverse-body-color: #fffef3;
+$red-0: #bd1515;
 
-$background-color-gray: rgba(215, 215, 215,1);
-$shade:rgba(0, 0, 0, 0.25);
+$background-color-gray: rgba(215, 215, 215, 1);
+$shade: rgba(0, 0, 0, 0.25);
 $background-color-light: #d4dbc9;
 
 //fonts
 $header-fontSize: 36px;
 $body-fontSize: 14px;
-$header-font: 'Montserrat', sans-serif;
-$body-font: 'Open Sans', sans-serif;
-$decor-font: 'Patrick Hand', cursive;
+$header-font: "Montserrat", sans-serif;
+$body-font: "Open Sans", sans-serif;
+$decor-font: "Patrick Hand", cursive;
 //font-weight
 $bold: 700;
 $regular: 400;

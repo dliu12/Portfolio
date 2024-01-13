@@ -4,7 +4,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,700;1,700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Open+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap");
-nav {
+.App > nav {
   position: -webkit-sticky;
   position: sticky;
   width: 100%;
@@ -17,7 +17,7 @@ nav {
           box-shadow: 5px 0px 10px rgba(0, 0, 0, 0.5);
 }
 
-nav .ProjectNav {
+.App > nav .ProjectNav {
   padding: 0;
   margin: 0;
   color: #533c02;
@@ -25,7 +25,7 @@ nav .ProjectNav {
   padding: 16px;
 }
 
-nav .ProjectNav > .BasicContacts {
+.App > nav .ProjectNav > .BasicContacts {
   padding: 0;
   margin: 0;
   color: #533c02;
@@ -40,12 +40,12 @@ nav .ProjectNav > .BasicContacts {
           box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.25);
 }
 
-nav .ProjectNav > .BasicContacts .BasicContacts__header {
+.App > nav .ProjectNav > .BasicContacts .BasicContacts__header {
   font-family: "Montserrat", sans-serif;
   margin-bottom: 16px;
 }
 
-nav .ProjectNav > .BasicContacts > li {
+.App > nav .ProjectNav > .BasicContacts > li {
   margin-top: 8px;
   font-family: "Open Sans", sans-serif;
   font-size: 14px;
@@ -59,13 +59,13 @@ nav .ProjectNav > .BasicContacts > li {
           flex-direction: column;
 }
 
-nav .ProjectNav > .BasicContacts > li > span {
+.App > nav .ProjectNav > .BasicContacts > li > span {
   font-size: 13px;
   font-weight: 400;
   font-style: italic;
 }
 
-nav .ProjectNav__items {
+.App > nav .ProjectNav__items {
   position: relative;
   margin-bottom: 16px;
   padding: 16px 8px;
@@ -76,16 +76,16 @@ nav .ProjectNav__items {
   font-size: 14px;
 }
 
-nav .ProjectNav__items a {
+.App > nav .ProjectNav__items a {
   color: #533c02;
   text-decoration: none;
 }
 
-nav .ProjectNav__items a:hover, nav .ProjectNav__items a:visited {
+.App > nav .ProjectNav__items a:hover, .App > nav .ProjectNav__items a:visited {
   color: #533c02;
 }
 
-nav .ProjectNav__items:hover {
+.App > nav .ProjectNav__items:hover {
   -webkit-animation: wiggle 2s forwards;
           animation: wiggle 2s forwards;
 }

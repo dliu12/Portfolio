@@ -1,0 +1,19 @@
+@import "../mixins.scss";
+
+.ProjectTemplate {
+	@include basicBackground();
+	&__header {
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		gap: 12px;
+		& > h1 {
+			@include basicHeaderStyle();
+			padding: 12px 24px;
+			& > span {
+				cursor: default;
+			}
+		}
+	}
+}

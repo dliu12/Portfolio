@@ -1,10 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,700;1,700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Open+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,700;1,700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Open+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap");
-.Page__introduction {
+.ProjectTemplate {
   background: url("../../../assets//img//dust_scratches.png"), linear-gradient(9deg, #eaeaea 100%, rgba(151, 151, 151, 0.25) 39%, rgba(137, 137, 137, 0.25) 0%);
   background-blend-mode: multiply;
   display: -webkit-box;
@@ -21,7 +18,22 @@
   padding: 24px 48px;
 }
 
-.Page__introduction--text {
+.ProjectTemplate__header {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 12px;
+}
+
+.ProjectTemplate__header > h1 {
   padding: 0;
   margin: 0;
   color: #533c02;
@@ -42,30 +54,10 @@
   font-size: 36px;
   color: #533c02;
   line-height: 48px;
+  padding: 12px 24px;
 }
 
-.Page__introduction--projects {
-  width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+.ProjectTemplate__header > h1 > span {
+  cursor: default;
 }
-
-.Page__introduction--projects a {
-  color: #533c02;
-  text-decoration: none;
-}
-
-.Page__introduction--projects a:hover, .Page__introduction--projects a:visited {
-  color: #533c02;
-}
-
-.Page__introduction--projects .PhotoCard {
-  margin-top: 56px;
-}
-/*# sourceMappingURL=Introduction.css.map */
+/*# sourceMappingURL=ProjectTemplate.css.map */
